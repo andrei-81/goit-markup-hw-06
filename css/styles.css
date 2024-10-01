@@ -726,22 +726,26 @@ img {
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 16px;
 }
 
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); 
-    width: 408px;
-    min-height: 584px;
+    transform: translate(-50%, -50%);
+    max-width: 408px;
+    min-width: calc(320px - 32px);
+    /* min-height: 584px; */
+    height: 632px;
     background: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 
     0px 1px 3px rgba(0, 0, 0, 0.12), 
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px; 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 72px 24px 24px 24px; 
+    /* padding: 72px 24px 24px 24px;  */
+    padding: 16px;
 }
 
 .modal-close-button {
@@ -792,6 +796,7 @@ img {
     letter-spacing: 0.02em; 
     color: var(--navy-blue);
     margin-bottom: 16px; 
+    margin-top: 60px; 
 }
 
 .modal-form-content {
@@ -807,7 +812,7 @@ img {
     line-height: 1.17; 
     letter-spacing: 0.04em;
     color: var(--modal-label-color);
-    display: block; 
+
     margin-bottom: 4px; 
 }
 
@@ -868,9 +873,17 @@ img {
     margin-bottom: 24px;
 }
 
+.comment-label {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 8px
+}
+
 .user-privacy-span {
     width: 16px; 
     height: 16px;
+    min-width: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px; 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
@@ -888,9 +901,6 @@ img {
     fill: var(--icon-color);
 }
 
-/* .input-privacy:checked + .comment-label .user-privacy-span svg {
-    fill: var(--icon-color);
-} */
 
 .privacy-link {
     color: var(--iris)
@@ -1078,6 +1088,22 @@ img {
         pointer-events: none;
     }
 
+    .modal-overlay {
+        padding: 0;
+    }
+
+    .modal {
+        width: 408px;
+        height: 584px;
+
+
+    }
+
+    .modal-name {
+        margin-top: 0; 
+        padding: 48px 0px 0px 24px
+    }
+
 }
 
 @media (min-width: 1158px) {
@@ -1151,8 +1177,8 @@ img {
 
 
 .modal-overlay{
-    /* opacity: 0;
-    pointer-events: none; */
+    opacity: 0;
+    pointer-events: none;
 }
 
 .menu-overlay {
