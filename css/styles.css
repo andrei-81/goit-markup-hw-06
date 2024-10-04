@@ -549,6 +549,11 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-style: normal;
+    max-width: 288px;
+}
+
+.our-footer {
+    justify-content: center;
 }
 
 .icon-container {
@@ -1348,6 +1353,10 @@ img {
         display: flex;
         flex-direction: row;
 
+    }
+
+    .our-footer {
+        justify-content: center;
     }
 
     .footer-block {
