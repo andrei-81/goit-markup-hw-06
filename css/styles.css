@@ -1103,6 +1103,8 @@ img {
 
     .portfolio-list {
         flex-direction: row;
+        padding-left: calc((100% - 24px - 288px - 288px) / 2);
+        padding-right: calc((100% - 24px - 288px - 288px) / 2);
     }
     
     .portfolio-card,
@@ -1332,6 +1334,7 @@ img {
         flex-direction: row;
         width: 100%;
         column-gap: calc((100% - (360px)*3)/2);
+        padding: 0
 
     }
 
