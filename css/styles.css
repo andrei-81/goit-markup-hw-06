@@ -1199,7 +1199,7 @@ img {
      {
         max-width: 1158px;
         padding: 0 16px;
-        margin: 0 auto;
+        /* margin: 0 auto; */
     }
 
     .service-section {
@@ -1353,8 +1353,21 @@ img {
     .footer-block {
         display: flex;
         flex-direction: row;
-        align-items: baseline;
-        justify-content: space-between;
+        width: 100%;
+        column-gap: 0;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+
+        
+    }
+
+    .logo-block {
+        margin-right: 120px;
+    }
+
+    .footer-social-block {
+        margin-right: 80px;
     }
 
     .our-footer {
