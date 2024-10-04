@@ -683,6 +683,7 @@ img {
 
 .subs-input {
     max-width: 264px;
+    width: 264px;
     height: 40px;
     border: 1px solid #ffffff; 
     opacity: 0.3;
